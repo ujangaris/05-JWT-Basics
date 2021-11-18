@@ -1,5 +1,13 @@
+const CustomeAPIError = require('../errors/custom-error');
 const login = async (req, res) => {
   const { username, password } = req.body;
+  // mongoose validatioin
+  //Joi
+  //Check in the controller
+
+  if (!username || !password) {
+    throw new CustomeAPIError('Please provide email and password', 400);
+  }
   console.log(username, password);
   res.send('Fake Login/Register/Signup Route');
 };

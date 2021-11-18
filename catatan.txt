@@ -28,3 +28,15 @@
         response: Fake Login/Register/Signup Route  
         dan pada     
             terminal : john secret
+
+    Pengujian pada Postman
+        Login/Register:
+        {{URL}}/login
+        body->raw -> json:
+            {
+                "username": "","password":""
+            }
+        ketika username dan password dikosongkan response akan menampilkan pesan error: 
+            {
+                "msg": "Please provide email and password"
+            }
