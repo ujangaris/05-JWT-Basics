@@ -40,3 +40,32 @@
             {
                 "msg": "Please provide email and password"
             }
+
+#Section 8: JWT - Basics | 155. JWT - Overview
+
+#Section 8: JWT - Basics | 156. JWT - Structure
+    Documentation: https://jwt.io/introduction
+
+    Documentation: https://www.npmjs.com/package/jsonwebtoken
+
+#Section 8: JWT - Basics | 158. Sign JWT
+    Pengujian pada Postman
+        Login/Register:
+        {{URL}}/login
+        body->raw -> json:
+            {
+                "username": "john","password":"secret"
+            }
+    response:
+            {
+                "msg": "user created",
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTksInVzZXJuYW1lIjoiam9obiIsImlhdCI6MTYzNzI2NzMxMSwiZXhwIjoxNjM5ODU5MzExfQ.yXbJ59YgdNuDg-yS1xiSZqS-mOsfn1I7fMKLjG2crxQ"
+            }
+    copy paste token pada jwt encode:
+        Documentation: https://jwt.io  maka response data akan tampil:
+            {
+                "id": 19,
+                "username": "john",
+                "iat": 1637267311,
+                "exp": 1639859311
+            }
