@@ -1,0 +1,19 @@
+#Section 8: JWT - Basics | 151. Setup
+    - starter/ npm install && npm start
+    - http://localhost:3000
+
+#Section 8: JWT - Basics | 152. Controllers
+
+#Section 8: JWT - Basics | 153. Postman Setup
+    Pengujian pada Postman
+        Dashboard:
+        GET {{URL}}/dashboard
+            response:   
+                        {
+                            "msg": "Hello, John Doe",
+                            "secret": "Here is your authorized data, your lucky number is 54"
+                        }
+
+        Login/Register:
+        {{URL}}/login
+            response: Fake Login/Register/Signup Route   
