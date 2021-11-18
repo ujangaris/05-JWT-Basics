@@ -4,7 +4,6 @@
 
 #Section 8: JWT - Basics | 152. Controllers
 
-#Section 8: JWT - Basics | 153. Postman Setup
     Pengujian pada Postman
         Dashboard:
         GET {{URL}}/dashboard
@@ -17,3 +16,15 @@
         Login/Register:
         {{URL}}/login
             response: Fake Login/Register/Signup Route   
+
+#Section 8: JWT - Basics | 154. Validate Username and Password
+    Pengujian pada Postman
+        Login/Register:
+        {{URL}}/login
+        body->raw -> json:
+            {
+                "username": "john","password":"secret"
+            }
+        response: Fake Login/Register/Signup Route  
+        dan pada     
+            terminal : john secret
