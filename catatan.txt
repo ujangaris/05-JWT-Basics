@@ -179,3 +179,13 @@
 
 #Section 8: JWT - Basics | 166. Status Codes
     Documentation: https://www.npmjs.com/package/http-status-codes
+
+#Section 8: JWT - Basics | 167. More Refactoring - Complete App
+    
+        pengujian pada browser:
+        http://localhost:3000
+            untuk mengetahui konsept api yang kita buat kamu dapat login pada browser
+            dengan manginputkan username : anna dan password: secret, guna medapatkan token dan data user yang login .
+        jika mencoba melakukan login dengan data kosong maka akn tapil pesan: Please Provide Email And Password
+        
+        
