@@ -144,3 +144,33 @@
             untuk mengetahui konsept api yang kita buat kamu dapat login pada browser
            coba klik get data, maka akan muncul pesan "Not authorized to access this route",
            dan pada terminal akan muncul 'Bearer null'
+
+#Section 8: JWT - Basics | 164. Auth Middleware Complete
+    Pengujian pada Postman
+        Login/Register:
+        {{URL}}/login
+        body->raw -> json:
+            {
+                "username": "peter","password":"secret"
+            }
+    response:
+            {
+                "msg": "user created",
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTksInVzZXJuYW1lIjoiam9obiIsImlhdCI6MTYzNzI2NzMxMSwiZXhwIjoxNjM5ODU5MzExfQ.yXbJ59YgdNuDg-yS1xiSZqS-mOsfn1I7fMKLjG2crxQ"
+            }
+    copy paste token pada jwt encode:
+         {{URL}}/dashboard
+         header => Authorization : Bearer paste token, lalu coba send data.
+
+         response:
+            {
+                "msg": "Hello, peter",
+                "secret": "Here is your authorized data, your lucky number is 94"
+            }
+
+        pengujian pada browser:
+        http://localhost:3000
+            untuk mengetahui konsept api yang kita buat kamu dapat login pada browser
+            dengan manginputkan username dan password diatas, guna medapatkan token dan data user yang login .
+        
+        pada terminal menampilkan response: { id: 19, username: 'peter' }
