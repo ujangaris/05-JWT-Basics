@@ -174,3 +174,5 @@
             dengan manginputkan username dan password diatas, guna medapatkan token dan data user yang login .
         
         pada terminal menampilkan response: { id: 19, username: 'peter' }
+
+#Section 8: JWT - Basics | 165. More Error Classes 
