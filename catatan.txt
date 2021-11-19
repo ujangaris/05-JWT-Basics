@@ -137,3 +137,10 @@
         http://localhost:3000
             untuk mengetahui konsept api yang kita buat kamu dapat login pada browser
             dengan manginputkan username dan password sembarang, guna medapatkan token dan data user yang login .
+
+#Section 8: JWT - Basics | 163. Auth Middleware Setup
+        pengujian pada browser:
+        http://localhost:3000
+            untuk mengetahui konsept api yang kita buat kamu dapat login pada browser
+           coba klik get data, maka akan muncul pesan "Not authorized to access this route",
+           dan pada terminal akan muncul 'Bearer null'
