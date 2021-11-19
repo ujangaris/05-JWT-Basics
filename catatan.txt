@@ -109,3 +109,31 @@
                 "msg": "No token provided"
             }
         lalu pada terminal akan hanya ada token yang tergenerate
+
+#Section 8: JWT - Basics | 162. Verif Token
+    Pengujian pada Postman
+        Login/Register:
+        {{URL}}/login
+        body->raw -> json:
+            {
+                "username": "peter","password":"secret"
+            }
+    response:
+            {
+                "msg": "user created",
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTksInVzZXJuYW1lIjoiam9obiIsImlhdCI6MTYzNzI2NzMxMSwiZXhwIjoxNjM5ODU5MzExfQ.yXbJ59YgdNuDg-yS1xiSZqS-mOsfn1I7fMKLjG2crxQ"
+            }
+    copy paste token pada jwt encode:
+         {{URL}}/dashboard
+         header => Authorization : Bearer paste token, lalu coba send data.
+
+         response:
+            {
+                "msg": "Hello, peter",
+                "secret": "Here is your authorized data, your lucky number is 94"
+            }
+
+        pengujian pada browser:
+        http://localhost:3000
+            untuk mengetahui konsept api yang kita buat kamu dapat login pada browser
+            dengan manginputkan username dan password sembarang, guna medapatkan token dan data user yang login .
