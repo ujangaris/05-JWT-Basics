@@ -176,3 +176,6 @@
         pada terminal menampilkan response: { id: 19, username: 'peter' }
 
 #Section 8: JWT - Basics | 165. More Error Classes 
+
+#Section 8: JWT - Basics | 166. Status Codes
+    Documentation: https://www.npmjs.com/package/http-status-codes
