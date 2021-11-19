@@ -69,3 +69,29 @@
                 "iat": 1637267311,
                 "exp": 1639859311
             }
+
+#Section 8: JWT - Basics | 159. Bearer Token - Overview
+    Documentation: https://jwt.io/introduction
+
+#Section 8: JWT - Basics | 160. Send Bearer Token
+    Pengujian pada Postman
+        Login/Register:
+        {{URL}}/login
+        body->raw -> json:
+            {
+                "username": "john","password":"secret"
+            }
+    response:
+            {
+                "msg": "user created",
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTksInVzZXJuYW1lIjoiam9obiIsImlhdCI6MTYzNzI2NzMxMSwiZXhwIjoxNjM5ODU5MzExfQ.yXbJ59YgdNuDg-yS1xiSZqS-mOsfn1I7fMKLjG2crxQ"
+            }
+    copy paste token pada jwt encode:
+         {{URL}}/dashboard
+         header => Authorizationi : Bearer paste token, lalu coba send data.
+
+         response:
+            {
+                "msg": "Hello, John Doe",
+                "secret": "Here is your authorized data, your lucky number is 94"
+            }
